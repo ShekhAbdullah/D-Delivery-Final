@@ -6,10 +6,10 @@ import MetaData from "../layout/MetaData";
 import PinDropIcon from "@material-ui/icons/PinDrop";
 import HomeIcon from "@material-ui/icons/Home";
 import LocationCityIcon from "@material-ui/icons/LocationCity";
-import PublicIcon from "@material-ui/icons/Public";
+// import PublicIcon from "@material-ui/icons/Public";
 import PhoneIcon from "@material-ui/icons/Phone";
-import TransferWithinAStationIcon from "@material-ui/icons/TransferWithinAStation";
-import { Country, State } from "country-state-city";
+// import TransferWithinAStationIcon from "@material-ui/icons/TransferWithinAStation";
+// import { Country, State } from "country-state-city";
 import { useAlert } from "react-alert";
 import CheckoutSteps from "../Cart/CheckoutSteps";
 
@@ -20,8 +20,8 @@ const Shipping = ({ history }) => {
 
   const [address, setAddress] = useState(shippingInfo.address);
   const [city, setCity] = useState(shippingInfo.city);
-  const [state, setState] = useState(shippingInfo.state);
-  const [country, setCountry] = useState(shippingInfo.country);
+  // const [state, setState] = useState(shippingInfo.state);
+  // const [country, setCountry] = useState(shippingInfo.country);
   const [pinCode, setPinCode] = useState(shippingInfo.pinCode);
   const [phoneNo, setPhoneNo] = useState(shippingInfo.phoneNo);
 
@@ -33,7 +33,7 @@ const Shipping = ({ history }) => {
       return;
     }
     dispatch(
-      saveShippingInfo({ address, city, state, country, pinCode, phoneNo })
+      saveShippingInfo({ address, city, pinCode, phoneNo })
     );
     history.push("/order/confirm");
   };
@@ -140,7 +140,7 @@ const Shipping = ({ history }) => {
               type="submit"
               value="Continue"
               className="shippingBtn"
-              disabled={state ? false : true}
+              // disabled={state ? false : true}
             />
           </form>
         </div>
