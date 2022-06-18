@@ -9,17 +9,18 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  color: rgb(0, 0, 0);
+  color: white;
 }
 
 .banner > h1 {
   margin: 5vmax;
   color: rgb(0, 0, 0);
-  font: 2000 2.3vmax "Roboto";
+  font: 6rgb(0, 0, 0)5vmax "Roboto";
 }
 
 .banner > p {
-  font: 1000 2vmax "Lucida Sans";
+  font: 300 1.4vmax "Lucida Sans";
+  color: rgb(0, 0, 0);
 }
 
 .banner > a > button {
@@ -79,12 +80,10 @@
   margin: 2vmax;
   transition: all 0.5s;
   padding-bottom: 0.5vmax;
-  border-radius: 20px 20px 20px 20px;
 }
 
 .productCard > img {
   width: 14vmax;
-  border-radius: 20px 20px 0px 0px;
 }
 
 .productCard > div {

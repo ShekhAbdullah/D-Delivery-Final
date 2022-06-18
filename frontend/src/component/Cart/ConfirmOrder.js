@@ -93,7 +93,7 @@ const ConfirmOrder = ({ history }) => {
               </div>
               <div>
                 <p>VAT:</p>
-                <span>{tax}</span>
+                <span>৳{tax}</span>
               </div>
             </div>
 
