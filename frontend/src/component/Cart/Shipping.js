@@ -28,7 +28,7 @@ const Shipping = ({ history }) => {
   const shippingSubmit = (e) => {
     e.preventDefault();
 
-    if (phoneNo.length < 10 || phoneNo.length > 10) {
+    if (phoneNo.length < 11 || phoneNo.length > 11) {
       alert.error("Phone Number should be 10 digits Long");
       return;
     }
@@ -68,7 +68,7 @@ const Shipping = ({ history }) => {
               <LocationCityIcon />
               <input
                 type="text"
-                placeholder="City"
+                placeholder="Building/office name"
                 required
                 value={city}
                 onChange={(e) => setCity(e.target.value)}
@@ -79,7 +79,7 @@ const Shipping = ({ history }) => {
               <PinDropIcon />
               <input
                 type="number"
-                placeholder="Pin Code"
+                placeholder="Room no."
                 required
                 value={pinCode}
                 onChange={(e) => setPinCode(e.target.value)}
@@ -94,7 +94,7 @@ const Shipping = ({ history }) => {
                 required
                 value={phoneNo}
                 onChange={(e) => setPhoneNo(e.target.value)}
-                size="10"
+                size="11"
               />
             </div>
 

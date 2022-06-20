@@ -62,7 +62,7 @@ const Products = ({ match }) => {
         <Loader />
       ) : (
         <Fragment>
-          <MetaData title="PRODUCTS -- ECOMMERCE" />
+          <MetaData title="PRODUCTS -- D-DELIVERY" />
           <h2 className="productsHeading">Products</h2>
 
           <div className="products">
@@ -83,7 +83,7 @@ const Products = ({ match }) => {
               max={25000}
             />
 
-            <Typography>Categories</Typography>
+            <Typography>Shops</Typography>
             <ul className="categoryBox">
               {categories.map((category) => (
                 <li
